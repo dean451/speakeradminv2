@@ -9,27 +9,27 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
 
 session = Session.create(
   title: "Block Chain Boost",
-  description: "Whizz up a low-fat breakfast smoothie in no time. Use banana with other soft fruit, plus honey for a little sweetness and oats for slow-release fuel.",
-  steps: "Put all the ingredients in a blender and whizz for 1 min until smooth. Pour the mixture into two glasses to serve.",
-  source: "https://www.bbcgoodfood.com/recipes/two-minute-breakfast-smoothie"
+  description: "Invest in crypto today, forget about FOMO, BTC is on the rise!",
+  steps: "Join us in Ballroom C for this tech talk.",
+  source: "https://btc.com"
 )
-session.speakers.create(name: "Musk", description: "An interesting description.")
-session.speakers.create(name: "Bridges", description: "An interesting description.")
-session.speakers.create(name: "Sagan", description: "An interesting description.")
-session.speakers.create(name: "Einstein", description: "An interesting description.")
-session.speakers.create(name: "Curie", description: "An interesting description.")
-session.speakers.create(name: "Newton", description: "An interesting description.")
+session.speakers.create(name: "Musk", description: "Rocket scientist")
+session.speakers.create(name: "Bridges", description: "Actor")
+session.speakers.create(name: "Sagan", description: "Cosmologist")
+session.speakers.create(name: "Einstein", description: "Physicist and nobel laureate")
+session.speakers.create(name: "Curie", description: "Radiographer")
+session.speakers.create(name: "Newton", description: "Inventor of Calculus")
 
 edu_session = Session.create(
   title: "#GetLit Libraries and EDU",
-  description: "Give yourself a dose of vitamin C in the morning with this vegan green smoothie. Along with kale and avocado, there's a hit of zesty lime and pineapple.",
-  steps: "Put all of the ingredients into a bullet or smoothie maker, add a large splash of water and blitz. Add more water until you have the desired consistency.",
-  source: "https://www.bbcgoodfood.com/recipes/kale-smoothie",
+  description: "Can community libraries revitalize community economies?",
+  steps: "Add some free books, a couple of magazines, and enterprise software for great surprises!",
+  source: "http://library.austintexas.gov/",
 )
-edu_session.speakers.create(name: "Couric", description: "An interesting description.")
-edu_session.speakers.create(name: "Acosta", description: "An interesting description.")
-edu_session.speakers.create(name: "Maddow", description: "An interesting description.")
-edu_session.speakers.create(name: "Evans", description: "An interesting description.")
-edu_session.speakers.create(name: "Olberman", description: "An interesting description.")
-edu_session.speakers.create(name: "Kronkite", description: "An interesting description.")
-edu_session.speakers.create(name: "Blitzer", description: "An interesting description.")
+edu_session.speakers.create(name: "Couric", description: "Yahoo News Anchor")
+edu_session.speakers.create(name: "Acosta", description: "White house press corps")
+edu_session.speakers.create(name: "Maddow", description: "MSBNC's house progressive")
+edu_session.speakers.create(name: "Evans", description: "Crossfire's biggest defender")
+edu_session.speakers.create(name: "Olberman", description: "Left wing nut job")
+edu_session.speakers.create(name: "Kronkite", description: "Timeless journalism")
+edu_session.speakers.create(name: "Blitzer", description: "Let's check out these tweets")

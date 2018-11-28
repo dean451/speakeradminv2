@@ -64,7 +64,7 @@ class App extends Component {
             {session.description && <p>{session.description}</p>}
             {session.speakers &&
               <Segment.Group>
-                {session.speakers.map((speaker, i) => <Segment key={i}>{speaker.description}</Segment>)}
+                {session.speakers.map((speaker, i) => <Segment key={i}>{speaker.name} -- {speaker.description}</Segment>)}
               </Segment.Group>
             }
             {session.steps && <p>{session.steps}</p>}
