@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_12_224233) do
+ActiveRecord::Schema.define(version: 2018_11_28_073555) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -36,6 +36,30 @@ ActiveRecord::Schema.define(version: 2018_11_12_224233) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.text "steps"
+    t.string "source"
+    t.string "difficulty"
+    t.string "tags"
+    t.string "hashtag"
+    t.string "format"
+    t.string "track"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "speakers", force: :cascade do |t|
+    t.integer "session_id"
+    t.string "description"
+    t.string "email"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["session_id"], name: "index_speakers_on_session_id"
   end
 
 end

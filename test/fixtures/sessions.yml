@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  steps: MyText
+  source: MyString
+  difficulty: MyString
+  tags: MyString
+  hashtag: MyString
+  format: MyString
+  track: MyString
+
+two:
+  title: MyString
+  description: MyText
+  steps: MyText
+  source: MyString
+  difficulty: MyString
+  tags: MyString
+  hashtag: MyString
+  format: MyString
+  track: MyString
